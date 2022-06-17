@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: rgb(3,3,3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0.1em;
+}
+
+#container {
+    width: 70%;
+    padding: 0;
+    text-align: center;
+    border: 1px solid 	#3d3c3c;
+    margin: 0 auto;
+}
+#container h1 {
+    font-size: 48px;
+}
+#cabecera {
+    background: #37488b;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.75);
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 1em 0 1em 0;
+}
+#post{
+    background-color: white;
+    padding: 0.2em;
+}
+#cabecera #logo {
+    width: 220px;
+    vertical-align: middle;
+    float: none;
+    padding: 0.1em 3em 0em 1em;
+    /*position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-210%, -485%);*/
+    /*width: 180px;
+    vertical-align: top;
+    float: right;*/
+}
+
+#cabecera #tagline {
+    padding: 0 0 0 1em;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+#footer {
+    /*padding: 0.5em 0 0.5em 0;*/
+    padding: 0.5em;
+    background: #777;
+    color: white;
+}
