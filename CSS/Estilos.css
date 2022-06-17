@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0.1em;
 }
-
 #container {
     width: 70%;
     padding: 0;
@@ -36,7 +35,6 @@ body {
     float: none;
     padding: 0.1em 3em 0em 1em;
 }
-
 #cabecera #tagline {
     padding: 0 0 0 1em;
     font-weight: normal;
