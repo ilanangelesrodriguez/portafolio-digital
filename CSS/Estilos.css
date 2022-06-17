@@ -35,13 +35,6 @@ body {
     vertical-align: middle;
     float: none;
     padding: 0.1em 3em 0em 1em;
-    /*position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translate(-210%, -485%);*/
-    /*width: 180px;
-    vertical-align: top;
-    float: right;*/
 }
 
 #cabecera #tagline {
@@ -50,7 +43,6 @@ body {
     font-size: 0.8em;
 }
 #footer {
-    /*padding: 0.5em 0 0.5em 0;*/
     padding: 0.5em;
     background: #777;
     color: white;
