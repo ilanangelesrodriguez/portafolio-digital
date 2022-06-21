@@ -1,6 +1,6 @@
 ## Myblog
 
-This is my repository, here are my personal projects.
+This is my blog, to start my personal brand.💙
 - This my page using blogger technology. 👇
 #####       [ilanangelesrodriguez.com](https://ilanangelesrodriguez.blogspot.com/)
 - My social network 👇
