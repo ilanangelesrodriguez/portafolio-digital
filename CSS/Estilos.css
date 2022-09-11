@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(7, 110, 124);
     color: rgb(3,3,3);
@@ -42,6 +43,7 @@ nav ul li a:hover{
     align-items: center;
 }
 
+
 #container {
     width: 100%;
     padding: 0;
@@ -61,6 +63,21 @@ nav ul li a:hover{
     margin: 0;
     padding: 1em 0 1em 0;
 }
+
+.busqueda{
+    background: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+.busqueda i{
+    margin-left: 10px;
+}
+.busqueda input{
+    border: none;
+    outline: none;
+}
+
+
 #post{
     background-color: white;
     padding: 0.2em;
