@@ -16,6 +16,7 @@ header{
 nav ul{
     display: flex;
     list-style: none;
+    align-items: center;
 }
 nav ul li{
     margin: 0 20px;
@@ -28,9 +29,21 @@ nav ul li a{
 nav ul li a:hover{
     color: #080242;
 }
+.container-logo img{
+    color: #088e49;
+    font-size: 50px;
+    background-color: #fff;
+    margin-right: 20px;
+    width: 40%;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
 
 #container {
-    width: 70%;
+    width: 100%;
     padding: 0;
     text-align: center;
     border: 1px solid 	#3d3c3c;
