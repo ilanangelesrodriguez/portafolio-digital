@@ -2,4 +2,5 @@
 
 This is my blog, to start my personal brand.💙
 - This my page. 👇
-https://ilanangelesrodriguez.github.io/MyBlog/
+
+[ilanangelesrodriguez.com](https://ilanangelesrodriguez.github.io/myBlog/)
