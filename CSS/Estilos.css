@@ -64,6 +64,17 @@ nav ul li a:hover{
     padding: 1em 0 1em 0;
 }
 
+
+.circulo-principal img{
+    height: 100%;
+    position: relative;
+    bottom: 30px;
+    transition: .5s;
+}
+.circulo-principal:hover img{
+    transform: scale(1.2);
+}
+
 .busqueda{
     background: #fff;
     padding: 10px;
@@ -94,4 +105,26 @@ nav ul li a:hover{
     padding: 0.5em;
     background: #777;
     color: white;
+}
+
+
+.ingredientes{
+    padding-left: 50px;
+}
+.ingredientes ul{
+    list-style: none;
+
+}
+.ingredientes li{
+    margin: 10px 0;
+}
+.ingredientes li i{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #088e49;
+    margin-right: 10px;
 }
