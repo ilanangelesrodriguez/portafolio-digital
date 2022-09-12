@@ -1,7 +1,7 @@
-var ingredientes_opcion1 = ['Leche Entera', 'Jarabe','Hielo', 'Salsa de Chocolate', 'Chips de Chocolate', 'Vainilla', 'Polvo de Cacao', 'Crema Batida'];
-var ingredientes_opcion2 = ['Leche', 'Jarabe','Hielo', 'Salsa de Chocolate', 'Cobertura de Caramelo', 'Crema Batida', 'Polvo de Vainilla'];
-var ingredientes_opcion3 = ['Leche', 'Jarabe','Hielo', 'Salsa Frutilla', 'Trozos de Frutilla', 'Crema Batida', 'Polvo de Vainilla'];
-var ingredientes_opcion4 = ['Leche', 'Jarabe','Hielo', 'Salsa Verde', 'Coberturas Especiales', 'Crema Batida', 'Hojas de Te Verde'];
+var ingredientes_opcion1 = ['a','b'];
+var ingredientes_opcion2 = ['a','b'];
+var ingredientes_opcion3 = ['a','b'];
+var ingredientes_opcion4 = ['a','b'];
 
 function cargar(opcion){
     var nombre = document.getElementById("nombre");
@@ -10,9 +10,9 @@ function cargar(opcion){
     var circulo = document.getElementById("circulo");
     var ingredientes = document.getElementById("ingredientes")
 
-    if(opcion==1){
+    if(opcion==0){
         nombre.innerHTML = "GitHub"
-        descripcion.innerHTML = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore sunt quas officia sapiente? Velit.";
+        descripcion.innerHTML = "Proyectos personales en lenguajes de programacion";
         fotoPrincipal.src = "Images/git.png";
         circulo.style.backgroundColor = "#f88965";
         ingredientes.innerHTML = "";
@@ -27,10 +27,10 @@ function cargar(opcion){
             ingredientes.appendChild(li);
         }
     }
-    if(opcion==2){
+    if(opcion==1){
         nombre.innerHTML = "Twitter"
-        descripcion.innerHTML = "At architecto id, quia, saepe non cum sapiente, est aut aspernatur perferendis dignissimos unde!";
-        fotoPrincipal.src = "img/f2.png";
+        descripcion.innerHTML = "Blog de contenidos";
+        fotoPrincipal.src = "Images/twitter.png";
         circulo.style.backgroundColor = "#f1c072";
         ingredientes.innerHTML = "";
         for(x=0; x < ingredientes_opcion2.length; x++ ){
@@ -44,11 +44,11 @@ function cargar(opcion){
             ingredientes.appendChild(li);
         }
     }
-    if(opcion==3){
-        nombre.innerHTML = "Blogspot"
-        descripcion.innerHTML = "Inventore magni voluptatum adipisci harum maiores architecto vero! Vel suscipit tempora pariatur ad, vero facilis ex, quibusdam iusto, asperiores eum laboriosam illum?";
-        fotoPrincipal.src = "img/f3.png";
-        circulo.style.backgroundColor = "#d46475";
+    if(opcion==2){
+        nombre.innerHTML = "Youtube"
+        descripcion.innerHTML = "Trabajos de la UNS";
+        fotoPrincipal.src = "Images/YouTube.png";
+        circulo.style.backgroundColor = "#398969";
         ingredientes.innerHTML = "";
         for(x=0; x < ingredientes_opcion3.length; x++ ){
             const li = document.createElement("li");
@@ -61,10 +61,10 @@ function cargar(opcion){
             ingredientes.appendChild(li);
         }
     }
-    if(opcion==4){
-        nombre.innerHTML = "Youtube"
-        descripcion.innerHTML = "Inventore magni voluptatum adipisci harum maiores architecto vero! Vel suscipit tempora";
-        fotoPrincipal.src = "img/f4.png";
+    if(opcion==3){
+        nombre.innerHTML = "Blogger"
+        descripcion.innerHTML = "Contenido";
+        fotoPrincipal.src = "Images/blogger.png";
         circulo.style.backgroundColor = "#398969";
         ingredientes.innerHTML = "";
         for(x=0; x < ingredientes_opcion4.length; x++ ){
@@ -78,5 +78,4 @@ function cargar(opcion){
             ingredientes.appendChild(li);
         }
     }
-    
 }
