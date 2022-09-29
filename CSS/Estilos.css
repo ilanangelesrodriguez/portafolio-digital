@@ -47,8 +47,9 @@ nav ul li a:hover{
     width: 100%;
     padding: 0;
     text-align: center;
-    border: 1px solid 	#3d3c3c;
+    border: 1px solid #3d3c3c;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 #container h1 {
     font-size: 30px;
@@ -100,6 +101,7 @@ nav ul li a:hover{
     padding: 0.5em;
     background: #777;
     color: white;
+    text-align: center;
 }
 .ingredientes{
     padding-left: 50px;
