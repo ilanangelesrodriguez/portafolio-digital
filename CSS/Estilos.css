@@ -13,6 +13,67 @@ header{
     width: 100%;
     height: 80px;
 }
+
+/*Header*/
+#about-me{
+    overflow: visible;
+}
+
+#about-me{
+    text-align: center;
+}
+
+#about-me .foto{
+    margin-top: -60px;
+}
+
+#about-me .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+#about-me .texto {
+    color: #17171B;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+    /* text-align: justify; */
+    
+}
+
+#about-me .texto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #314DE1;
+    text-align: center;
+}
+
+#about-me .texto p{
+    font-size: 1em;
+    font-weight: 300;
+    padding: 40px;
+}
+
+#about-me .texto .jump{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#about-me .texto .bold{
+    color: #3895EA;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 nav ul{
     display: flex;
     list-style: none;
@@ -64,9 +125,11 @@ nav ul li a:hover{
     padding: 1em 0 1em 0;
 }
 .circulo-principal img{
-    height: 100%;
     position: relative;
     transition: .5s;
+    width: 90px;
+    font-size: 50px;
+    margin-right: 20px;
 }
 .circulo-principal:hover img{
     transform: scale(1.2);
@@ -83,9 +146,10 @@ nav ul li a:hover{
     border: none;
     outline: none;
 }
-#post{
+#about-me{
     background-color: white;
     padding: 0.2em;
+    height: 400px;
 }
 #cabecera #logo {
     width: 0px;
@@ -103,35 +167,17 @@ nav ul li a:hover{
     color: white;
     text-align: center;
 }
-.ingredientes{
-    padding-left: 50px;
-}
-.ingredientes ul{
-    list-style: none;
-}
-.ingredientes li{
-    margin: 10px 0;
-}
-.ingredientes li i{
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-    color: #088e49;
-    margin-right: 10px;
-}
 .rectangulo{
+    padding: 1em 0 1em 0;
+    margin: 0;
     border-radius: 40px 40px 0 0;
     background-color: #1f2131;
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1200px;
     width: 100%;
-    height: 150px;
+    height: 100px 100px;
 }
