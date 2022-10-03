@@ -31,7 +31,7 @@ function cargar(opcion){
         nombre.innerHTML = "Twitter"
         descripcion.innerHTML = "Blog de contenidos";
         fotoPrincipal.src = "Images/twitter.png";
-        circulo.style.backgroundColor = "#f1c072";
+        //circulo.style.backgroundColor = "#FFFF";
         ingredientes.innerHTML = "";
         for(x=0; x < ingredientes_opcion2.length; x++ ){
             const li = document.createElement("li");
@@ -48,7 +48,7 @@ function cargar(opcion){
         nombre.innerHTML = "Youtube"
         descripcion.innerHTML = "Trabajos de la UNS";
         fotoPrincipal.src = "Images/YouTube.png";
-        circulo.style.backgroundColor = "#398969";
+        //circulo.style.backgroundColor = "#398969";
         ingredientes.innerHTML = "";
         for(x=0; x < ingredientes_opcion3.length; x++ ){
             const li = document.createElement("li");
@@ -65,7 +65,7 @@ function cargar(opcion){
         nombre.innerHTML = "Blogger"
         descripcion.innerHTML = "Contenido";
         fotoPrincipal.src = "Images/blogger.png";
-        circulo.style.backgroundColor = "#398969";
+        //circulo.style.backgroundColor = "#398969";
         ingredientes.innerHTML = "";
         for(x=0; x < ingredientes_opcion4.length; x++ ){
             const li = document.createElement("li");
