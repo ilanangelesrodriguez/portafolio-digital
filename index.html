@@ -17,8 +17,8 @@
             </div>
             <nav class="head">
                 <ul>
-                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#about-me">Sobre mi</a></li>
                 </ul>
             </nav>
@@ -49,12 +49,10 @@
             <li>Shapra</li>
             <li>Gringo</li>
             <p>This blog is to share content about computing.</p>
-            <footer>
                 <p>My social networks</p>
                 <p>You can subscribe here:</p>
                 <a target="_blank" href="https://twitter.com/ilanangeles1282">Twitter</a>
 		<a target="_blank" href="https://www.youtube.com/channel/UCEI0tIbsA0wt3Hs6ow1UqUg">YouTube</a>
-            </footer>
         </div>
 
          <!-- INFORMACION -->
@@ -67,7 +65,7 @@
                         Estos son mis proyectos con lenguajes de programacion.
                     </p>
                     <span id="precio">Enlace</span>
-                    <button>
+                    <button target="_blank" href="https://github.com/ilanangelesrodriguez">
                         Ir
                         <i class="fa-solid fa-circle-chevron-right"></i>
                     </button>
@@ -95,7 +93,7 @@
                     </div>
                 </div>
                 <h3>Twitter</h3>
-                <a href="#">Ir a la red</a>
+                <a target="_blank" href="https://twitter.com/ilanangeles1282">Twitter</a>
             </div>
             <div class="opcion" onclick="cargar(2)">
                 <div class="circulo color2">
@@ -105,7 +103,7 @@
                     </div>
                 </div>
                 <h3>YouTube</h3>
-                <a href="#">Ir a la red</a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCEI0tIbsA0wt3Hs6ow1UqUg">Ir a la red</a>
             </div>
             <div class="opcion" onclick="cargar(3)">
                 <div class="circulo color2">
@@ -115,19 +113,32 @@
                     </div>
                 </div>
                 <h3>Blogger</h3>
-                <a href="#">Ir a la red</a>
+                <a target="_blank" href="https://ilanangelesrodriguez.blogspot.com/">Ir a la red</a>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
-
-	<div id="footer">
-	    From Moro With Love 💙
-	</div>
     <!--<div>
         <img src="Images/banner.png" width=100%">
     </div>-->
     </div>
+    <footer>
+    <section class="contacto" id="contacto">
+        <div class="contenedor">
+             <h3 class="titulo">Contacto</h3>
+             <form class="formulario" action="#">
+                 <input type="text" name="nombre" placeholder="Nombre" required>
+                 <input type="email" name="email" placeholder="E-mail" required>
+                 <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                 <input class="boton" type="submit" value="Enviar">
+             </form>
+         </div>
+     </section>
+     
+</footer>
 </body>
+
+<div id="footer">
+    From Moro With Love 💙
+</div>
 </html>
