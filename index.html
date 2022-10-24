@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="header">
-      <nav>
+      <nav class="header-menu">
         <ul>
           <li><a href="#home">Inicio</a></li>
           <li><a href="#about-me">Sobre mi</a></li>
@@ -18,66 +18,107 @@
         </ul>
       </nav>
     </div>
-    <section id="home">
+    <section class="home" id="home">
       <h1>Home</h1>
-      <img
-        class="img-home"
-        src="Images/pexels-elijah-o'donnell-3473569.jpg"
-        alt=""
-      />
-      <span>Ilan Néstor Angeles Rodriguez</span>
+      <p>Ilan Néstor Angeles Rodriguez</p>
     </section>
-    <section id="about-me">
-      <h1>About me</h1>
-      <p>I'm Ilan Néstor Angeles Rodriguez. I'm 20 years old.</p>
-      <p>I'm a system engineering student at UNS.</p>
-      <p>My favorite team is FC Barcelona.</p>
-      <p>I have 2 dogs:</p>
-      <li>Shapra</li>
-      <li>Gringo</li>
-      <p>This blog is to share content about computing.</p>
-      <div class="profile">
-        <img src="images/profile.png" alt="" />
+
+    <!--Seccion sobre mi-->
+    <section class="about-me" id="about-me">
+      <div>
+        <h1>About me</h1>
+        <br>
+        <div class="img-profile">
+            <img class="profile" src="images/profile.png" alt="" />
+          </div>
+        <p>I'm Ilan Néstor Angeles Rodriguez. I'm 20 years old.</p>
+        <br>
+        <p>I'm a system engineering student at UNS.</p>
+        <br>
+        <p>My favorite team is FC Barcelona.</p>
+        <br>
+        <p>This blog is to share content about computing.</p>
+        <br>
       </div>
 
-      <div class="skills">
-        <h3 class="skills-title">Skills</h3>
-        <ul >
-          <li><img class="skills-logo" src="Images/git.png" alt="Git" />Git</li>
-          <li><img class="skills-logo" src="Images/github.png" alt="GitHub" />GitHub</li>
-          <li><img class="skills-logo" src="Images/html.png" alt="HTML" />HTML</li>
-          <li><img class="skills-logo" src="Images/css.png" alt="CSS" />CSS</li>
-          <li><img class="skills-logo" src="Images/javascript.webp" alt="JS" />JavaScript</li>
-        </ul>
-      </div>
+      <!-- Seccion de mis habilidades -->
+      <section>
+        <nav class="skills">
+          <h2 class="skills-title">Skills</h2>
+          <br>
+          <ul class="skills-list">
+            <li>
+              <img class="skills-logo" src="Images/git.png" alt="Git" />
+              <p>Git</p>
+            </li>
+            <li>
+              <img class="skills-logo" src="Images/github.png" alt="GitHub" />
+              <p>GitHub</p>
+            </li>
+            <li>
+              <img class="skills-logo" src="Images/html.png" alt="HTML" />
+              <p>HTML</p>
+            </li>
+            <li>
+              <img class="skills-logo" src="Images/css.png" alt="CSS" />
+              <p>CSS</p>
+            </li>
+            <li>
+              <img class="skills-logo" src="Images/javascript.webp" alt="JS" />
+              <p>JavaScript</p>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </section>
-    <section id="contact">
+
+    <!-- Seccion para contacto -->
+    <section class="contact" id="contact">
       <h1>Contact</h1>
+      <br>
       <form action="landing.html" method="get">
         <div class="name">
           <label for="name">Name</label>
           <input type="text" id="name" />
         </div>
+        <br>
         <div class="email">
           <label for="email">Email</label>
           <input type="email" id="email" />
         </div>
+        <br>
         <div class="message">
           <label for="message">Message</label>
           <textarea name="message" id="message" cols="20" rows="4"></textarea>
         </div>
+        <br>
         <button>Submit</button>
         <button type="reset">Reset</button>
       </form>
     </section>
-    <footer>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/ilannestorangelesrodriguez/" target="_blank"><img class="social-network" src="Images/LinkedIn.png" alt="LindeIn"></a></li>
-            <li><a href="https://github.com/ilanangelesrodriguez" target="_blank"><img class="social-network" src="Images/github.png" alt="GitHub"></a></li>
-            <li><a href="https://twitter.com/ilanangeles1282" target="_blank"><img class="social-network" src="Images/twitter.png" alt="Twitter"></a></li>
-        </ul>
+    <footer class="social-network">
+      <ul class="social-network">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ilannestorangelesrodriguez/"
+            target="_blank"
+            ><img class="sn-logo" src="Images/LinkedIn.png" alt="LindeIn"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/ilanangelesrodriguez" target="_blank"
+            ><img class="sn-logo" src="Images/github.png" alt="GitHub"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ilanangeles1282" target="_blank"
+            ><img class="sn-logo" src="Images/twitter.png" alt="Twitter"
+          /></a>
+        </li>
+      </ul>
     </footer>
-    <div id="footer">From Moro With Love 💙</div>
+    <br>
+    <div class="footer-d">From Moro With Love 💙</div>
   </body>
   <script src="script.js"></script>
 </html>
