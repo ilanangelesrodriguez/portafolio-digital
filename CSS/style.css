@@ -1,7 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-html{
-    font-family: 'Silkscreen', cursive;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+html {
+    font-family: 'Merriweather', serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,13 @@ html{
     flex-wrap: wrap;
     padding: 40px 10px;
 }
-
+.img-home{
+    max-height: 100%;
+    max-width: 100%;
+    width: 40%;
+    height: 40%;
+    padding-left: 30%;
+}
 .header-menu ul {
     display: flex;
     justify-content: space-around;
@@ -45,9 +51,26 @@ html{
 .contact {
     padding: 40px 10px;
     text-align: center;
+    background-color: rgb(110, 168, 255);
 }
-.social-network {
-    padding: 0 10px;
+.button {
+    padding: 10px 40px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    font-family:'Merriweather', serif;
+    border: none;
+    cursor: pointer;
+}
+input {
+    padding: 8px;
+}
+#email, #name, #message  {
+    max-width: 100%;
+    width: 40vw;
+    font-family: 'Merriweather', serif;
+    font-size: 100%;
+    padding: 10px;
 }
 .skills-title {
     display: flex;
@@ -67,9 +90,6 @@ html{
 .skills-list li img {
     /* width: 30px; */
     margin-right: 10px;
-}
-.social-network{
-    display: flex;
 }
 .social-network {
     display: flex;
