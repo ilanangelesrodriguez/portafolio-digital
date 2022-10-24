@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+:root {
+    --color-main: aquamarine;
+}
 html {
     font-family: 'Merriweather', serif;
 }
@@ -6,25 +9,32 @@ html {
     margin: 0;
     padding: 0;
 }
+.header-menu ul li a {
+    color: aliceblue;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    font-size: 100%;
+}
 .header {
-    background-color: aqua;
+    background-color: rgb(8, 23, 105);
     max-width: 100%;
     width: 100vw;
     position: fixed;
-    top: 0;
+    /* top: 0; */
+    padding: 20px 0 ;
 }
 .home {
-    background-color: aquamarine;
+    background-color: var(--color-main);
     flex-wrap: wrap;
-    padding: 40px 10px;
+    padding: 90px 10px;
 }
-.img-home{
+.img-home {
     max-height: 100%;
     max-width: 100%;
     width: 40%;
     height: 40%;
     padding-left: 30%;
-}
+} 
 .header-menu ul {
     display: flex;
     justify-content: space-around;
@@ -42,8 +52,8 @@ html {
     width: 8vw;
 }
 .about-me {
-    padding: 40px 10px;
-    text-align: center;
+    padding: 110px 10px;
+    margin: 10px;
 }
 .home h1,.home p {
     text-align: center;
@@ -51,7 +61,7 @@ html {
 .contact {
     padding: 40px 10px;
     text-align: center;
-    background-color: rgb(110, 168, 255);
+    background-color: var(--color-main);
 }
 .button {
     padding: 10px 40px;
@@ -61,16 +71,23 @@ html {
     font-family:'Merriweather', serif;
     border: none;
     cursor: pointer;
+    font-size: 100%;
 }
-input {
+/* input {
     padding: 8px;
-}
+    border-radius: 8px;
+} */
 #email, #name, #message  {
     max-width: 100%;
     width: 40vw;
     font-family: 'Merriweather', serif;
-    font-size: 100%;
     padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+.skills {
+    background-color: var(--color-main);
+    padding: 30px 20px;
 }
 .skills-title {
     display: flex;
@@ -101,5 +118,5 @@ input {
 .footer-d {
     display: flex;
     justify-content: center;
-    background-color: cornflowerblue;
+    background-color: var(--color-main);
 }
