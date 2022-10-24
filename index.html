@@ -1,160 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To My Blog 2.0</title>
-    <link rel="stylesheet" href="CSS/Estilos.css">
-</head>
-<body>
-    <div id="container">
-         <!-- Encabezado -->
-         <header>
-            <div class="container-logo">
-                <img src="Images/Logo3.png" width=100%>
-            </div>
-        </header>
-        <div>
-            <nav id="head">
-                <ul>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#about-me">Sobre mi</a></li>
-                </ul>
-            </nav>
-            <div id="search">
-                <div class="busqueda">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Buscar">
-                </div>
-                <button class="boton">Buscar</button>
-            </div>
-            <!--<div id="search">
-            <div class="busqueda">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Buscar">
-            </div>
-            <button class="boton">Buscar</button>
-            </div>-->
-            <div>
-                <p>
-
-                </p>
-            </div>
-        </div>
-        
-        <!--<div class="contenedor-texto">
-            <div class="texto">
-                <h1 class="nombre">Ilan Nestor Angeles Rodriguez</h1>
-                <h2 class="profesion">Estudiante de Ingenieria de Sistemas</h2>
-            </div>
-        </div>-->
-
-        <div id="cabecera">
-            <div id="cabtext">
-            Ilan Néstor Angeles Rodriguez
-            <span id="tagline">Systems Engineer</span></div>
-        </div>
-        <div id="about-me">
-            <h1>About me</h1>
-            <p>I'm Ilan Néstor Angeles Rodriguez. I'm 19 years old.</p>
-            <p>I'm a system engineering student at UNS.</p>
-            <p>My favorite team is FC Barcelona.</p>
-            <p>I have 2 dogs:</p>
-            <li>Shapra</li>
-            <li>Gringo</li>
-            <p>This blog is to share content about computing.</p>
-                <p>My social networks</p>
-                <p>You can subscribe here:</p>
-                <a target="_blank" href="https://twitter.com/ilanangeles1282">Twitter</a>
-		<a target="_blank" href="https://www.youtube.com/channel/UCEI0tIbsA0wt3Hs6ow1UqUg">YouTube</a>
-        </div>
-
-         <!-- INFORMACION -->
-         <div id="proyectos" class="informacion">
-            <div class="fila">
-                <!-- columna izquierda -->
-                <div class="col">
-                    <h2 id="nombre">Cuenta <br> GitHub</h2>
-                    <p id="descripcion">
-                        Estos son mis proyectos con lenguajes de programacion.
-                    </p>
-                    <span id="precio">Enlace</span>
-                    <button target="_blank" href="https://github.com/ilanangelesrodriguez">
-                        Ir
-                        <i class="fa-solid fa-circle-chevron-right"></i>
-                    </button>
-                </div>
-
-                <!-- Columna Central -->
-                <div class="col">
-                    <div class="circulo-principal" id="circulo">
-                        <img src="Images/git.png" alt="" id="fotoPrincipal">
-                    </div>
-                </div>
-
-                <!-- Columna derecha -->
-                <div class="col redes">
-                </div>
-            </div>
-        </div>
-
-        <div class="rectangulo">
-            <div class="opcion" onclick="cargar(1)">
-                <div class="circulo color1">
-                    <img src="img/f1.png" alt="">
-                    <div class="puntuacion">
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <h3>Twitter</h3>
-                <a target="_blank" href="https://twitter.com/ilanangeles1282">Twitter</a>
-            </div>
-            <div class="opcion" onclick="cargar(2)">
-                <div class="circulo color2">
-                    <img src="img/f2.png" alt="">
-                    <div class="puntuacion">
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <h3>YouTube</h3>
-                <a target="_blank" href="https://www.youtube.com/channel/UCEI0tIbsA0wt3Hs6ow1UqUg">Ir a la red</a>
-            </div>
-            <div class="opcion" onclick="cargar(3)">
-                <div class="circulo color2">
-                    <img src="img/f3.png" alt="">
-                    <div class="puntuacion">
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <h3>Blogger</h3>
-                <a target="_blank" href="https://ilanangelesrodriguez.blogspot.com/">Ir a la red</a>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilan Néstor Angeles Rodriguez | Portafolio Digital</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about-me">Sobre mi</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-    <script src="script.js"></script>
-    <!--<div>
-        <img src="Images/banner.png" width=100%">
-    </div>-->
-    </div>
+    <section id="home">
+      <h1>Home</h1>
+      <img
+        class="img-home"
+        src="Images/pexels-elijah-o'donnell-3473569.jpg"
+        alt=""
+      />
+      <span>Ilan Néstor Angeles Rodriguez</span>
+    </section>
+    <section id="about-me">
+      <h1>About me</h1>
+      <p>I'm Ilan Néstor Angeles Rodriguez. I'm 20 years old.</p>
+      <p>I'm a system engineering student at UNS.</p>
+      <p>My favorite team is FC Barcelona.</p>
+      <p>I have 2 dogs:</p>
+      <li>Shapra</li>
+      <li>Gringo</li>
+      <p>This blog is to share content about computing.</p>
+      <div class="profile">
+        <img src="images/profile.png" alt="" />
+      </div>
+
+      <div class="skills">
+        <h3 class="skills-title">Skills</h3>
+        <ul >
+          <li><img class="skills-logo" src="Images/git.png" alt="Git" />Git</li>
+          <li><img class="skills-logo" src="Images/github.png" alt="GitHub" />GitHub</li>
+          <li><img class="skills-logo" src="Images/html.png" alt="HTML" />HTML</li>
+          <li><img class="skills-logo" src="Images/css.png" alt="CSS" />CSS</li>
+          <li><img class="skills-logo" src="Images/javascript.webp" alt="JS" />JavaScript</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <form action="results.html" method="get">
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="20" rows="4"></textarea>
+        </div>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
     <footer>
-    <section class="contacto" id="contacto">
-        <div class="contenedor">
-             <h3 class="titulo">Contacto</h3>
-             <form class="formulario" action="#">
-                 <input type="text" name="nombre" placeholder="Nombre" required>
-                 <input type="email" name="email" placeholder="E-mail" required>
-                 <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                 <input class="boton" type="submit" value="Enviar">
-             </form>
-         </div>
-     </section>
-     
-</footer>
-</body>
-
-<div id="footer">
-    From Moro With Love 💙
-</div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/ilannestorangelesrodriguez/" target="_blank"><img class="social-network" src="Images/LinkedIn.png" alt=""></a></li>
+            <li><a href="https://github.com/ilanangelesrodriguez" target="_blank"><img class="social-network" src="images/github.png" alt=""></a></li>
+            <li><a href="https://twitter.com/ilanangeles1282" target="_blank"><img class="social-network" src="images/twitter.png" alt=""></a></li>
+        </ul>
+    </footer>
+    <div id="footer">From Moro With Love 💙</div>
+  </body>
+  <script src="script.js"></script>
 </html>
