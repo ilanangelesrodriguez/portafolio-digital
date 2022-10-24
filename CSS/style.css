@@ -2,13 +2,84 @@
 html{
     font-family: 'Silkscreen', cursive;
 } */
-.img-home {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100vw;
-    height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
 }
-.skills-logo, .social-network {
+.header {
+    background-color: aqua;
     max-width: 100%;
-    width: 10vw;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+.home {
+    background-color: aquamarine;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+}
+
+.header-menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.profile {
+    max-width: 100%;
+    width: 20vw;
+    float: right;
+}
+.skills-logo, .sn-logo {
+    max-width: 100%;
+    width: 8vw;
+}
+.about-me {
+    padding: 40px 10px;
+    text-align: center;
+}
+.home h1,.home p {
+    text-align: center;
+}
+.contact {
+    padding: 40px 10px;
+    text-align: center;
+}
+.social-network {
+    padding: 0 10px;
+}
+.skills-title {
+    display: flex;
+    justify-content: center;
+}
+.skills-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-list li {
+    display: flex;
+    align-items: center;
+}
+.skills-list li img {
+    /* width: 30px; */
+    margin-right: 10px;
+}
+.social-network{
+    display: flex;
+}
+.social-network {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: baseline;
+}
+.footer-d {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
 }
