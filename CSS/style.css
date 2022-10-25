@@ -28,7 +28,11 @@ html {
     flex-wrap: wrap;
     padding: 90px 10px;
     background-image: url(../Images/pexels-stein-egil-liland-1933239.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     max-height: 100%;
+    max-width: 100%;
+    width: 120vw;
     height: 80vh;
 }
 .img-home {
