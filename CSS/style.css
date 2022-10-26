@@ -56,7 +56,7 @@ html {
     width: 8vw;
 }
 .about-me {
-    padding: 110px 10px;
+    padding: 110px 10px 0 10px;
     margin: 10px;
 }
 .home h1,.home p {
@@ -132,7 +132,7 @@ html {
         --color-sec: rgb(8, 82, 105);  
     }
     .about-me {
-        padding: 60px 10px;
+        padding: 60px 10px 0 10px;
     }
     .header {
         background-color: var(--color-sec);
