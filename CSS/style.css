@@ -63,10 +63,8 @@ html {
     animation: animacion 2s ease-in-out infinite alternate;
 }
 @keyframes animacion {
-    from {color: rgb(141, 156, 241);
-        transform: translateX(0%) translateY(-80%);}
-    to {color: rgb(121, 238, 121);
-        transform: translateX(0%) translateY(0%);}
+    from {color: rgb(141, 156, 241);}
+    to {color: rgb(121, 238, 121);}
 }
 .home h1 {
     padding-top: 200px;
