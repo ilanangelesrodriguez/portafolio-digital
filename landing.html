@@ -5,83 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Indie+Flower&family=Noto+Sans+Vai&family=Pacifico&display=swap");
+      section {
+        display: flex;
+        justify-content: center;
+      }
+      html {
+        background-image: url(https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .card {
+        max-width: 100%;
+        max-height: 100%;
+        width: 70vw;
+        height: 80vh;
+        background: lightgreen;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 8vh;
+      }
+      .card .sn img {
+        max-width: 100%;
+        max-height: 100%;
+        height: 100vh;
+      }
+      .sn,
+      .tag {
+        width: 90px;
+        height: 75px;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .tag {
+        width: 120px;
+        display: flex;
+        align-self: center;
+      }
+      .card h1 {
+        text-align: center;
+        font-family: "Akaya Telivigala", cursive;
+        font-size: 5vh;
+        margin-top: 0px;
+      }
+      .profile img {
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        border-radius: 250px;
+      }
+      h5 {
+        margin: 0;
+        text-align: center;
+        font-size: 3vh;
+        font-family: "Akaya Telivigala", cursive;
+      }
+      .salida {
+        font-family: "Akaya Telivigala", cursive;
+        font-size: 4vh;
+        margin-left: 2vw;
+      }
+
+      @media (max-width: 700px) {
+        .card {
+          max-height: 100%;
+          height: 80vh;
+          background: rgb(21, 180, 219);
+        }
+        .profile img {
+          width: 100px;
+        }
+        .card h1 {
+          text-align: center;
+          font-size: 3vh;
+        }
+        .card .sn img {
+          height: 40px;
+        }
+        .sn {
+          margin-bottom: 0;
+        }
+      }
+    </style>
   </head>
   <body class="text-dark" style="font-family: 'PT Serif', serif">
-    <div class="mb-3">
-      <h1 class="ms-3 mt-2">Hola</h1>
-      <div class="ms-3" id="resultados"></div>
-      <br />
-      <a class="ms-3" href="index.html">Volver al formulario</a>
+    <section>
+      <div class="card">
+        <div class="profile">
+          <img
+            src="https://avatars.githubusercontent.com/u/86811722?v=4"
+            alt=""
+          />
+        </div>
+        <h1>Ilan Nestor Angeles Rodriguez</h1>
+        <div style="display: flex; flex-direction: row; justify-content: center; gap: 6vw; row-gap: 5vh; flex-wrap: wrap;">
+          <div class="sn">
+            <img
+              src="./Images/Gmail.webp" alt="..."/>
+            <h5>Gmail</h5>
+            <a class="tag" href="mailto:ilanangelesrodriguez@gmail.com?subject=titulo" target="_blank">Enviar mensaje</a>
+          </div>
+
+          <div class="sn">
+            <img src="./Images/Outlook.png" alt="..." />
+            <h5>Outlook</h5>
+            <a class="tag" href="mailto:ilan_007_ar@hotmail.com?subject=titulo" target="_blank">Enviar mensaje</a>
+          </div>
+
+          <div class="sn">
+            <img src="./Images/mensaje.png" alt="..." />
+            <h5>Mensaje</h5>
+            <a class="tag" href="sms:+51975596292?body=contenido" target="_blank">Enviar mensaje</a>
+          </div>
+
+          <div class="sn">
+            <img src="./Images/telefono.png" alt="..."/>
+            <h5>Telefono</h5>
+            <a class="tag" href="tel:+51975596292" target="_blank">Llamar</a>
+          </div>
+
+          <div class="sn">
+            <img src="./Images/fb.png" alt="..."/>
+            <h5>Facebook</h5>
+            <a class="tag" href="https://www.facebook.com/ilan.angelesrodriguez.9" target="_blank">Ver perfil</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div>
+      <a class="salida" href="index.html">Volver</a>
     </div>
-
-    <div class="d-flex flex-row flex-wrap">
-      <div class="card mb-3 " style="width: 150px; height: 250px;">
-        <img src="./Images/Gmail.webp" class="card-img-top img-fluid vh-50 "  alt="..." />
-
-        <div class="card-body" style="width: 150px; height: 150px;" style="justify-content: center;">
-          <h5 class="card-title">Gmail</h5>
-          <a href="mailto:ilanangelesrodriguez@gmail.com?subject=titulo" class="btn btn-primary">Enviar mensaje</a>
-        </div>
-      </div>
-
-      <div class="card mb-3 " style="width: 150px; height: 250px;">
-        <img src="./Images/Outlook.png" class="card-img-top img-fluid" style="width: 120px; height: 120px;" alt="..."/>
-
-        <div class="card-body " style="width: 150px; height: 150px;">
-          <h5 class="card-title">Outlook</h5>
-          <a href="mailto:ilan_007_ar@hotmail.com?subject=titulo" class="btn btn-primary">Enviar mensaje</a>
-        </div>
-      </div>
-
-      <div class="card mb-3 " style="width: 150px; height: 250px;">
-        <img src="./Images/fb.png" class="card-img-top img-fluid" style="width: 120px; height: 120px;" alt="..."/>
-
-        <div class="card-body">
-          <h5 class="card-title">Facebook</h5>
-          <a href="../" class="btn btn-primary">Ver perfil</a>
-        </div>
-      </div>
-
-      <div class="card mb-3 " style="width: 150px; height: 250px;">
-        <img src="./Images/twitter.png" class="card-img-top img-fluid" style="width: 140px; height: 120px;"  alt="..."/>
-
-        <div class="card-body">
-          <h5 class="card-title">Twitter</h5>
-          <a href="../" class="btn btn-primary">Ver perfil</a>
-        </div>
-      </div>
-
-      <div class="card mb-3 " style="width: 150px; height: 250px;">
-        <img src="./Images/LinkedIn.png" class="card-img-top img-fluid" style="width: 120px; height: 120px;"  alt="..." />
-
-        <div class="card-body">
-          <h5 class="card-title">Linkedin</h5>
-          <a href="../" class="btn btn-primary">Ver perfil</a>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      const resDiv = document.getElementById("resultados");
-      new URLSearchParams(window.location.search).forEach((val, name) => {
-        resDiv.append(`${name}: ${val}`);
-        resDiv.append(document.createElement("br"));
-      });
-    </script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-  ></script>
 </html>
