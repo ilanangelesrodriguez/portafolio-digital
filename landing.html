@@ -20,12 +20,14 @@
         max-width: 100%;
         max-height: 100%;
         width: 70vw;
-        height: 80vh;
+        height: 78vh;
         background: lightgreen;
-        border-radius: 20px;
+        border-radius: 30px;
         overflow: auto;
         margin-top: 8vh;
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.212);
       }
+
       .card .sn img {
         max-width: 100%;
         max-height: 100%;
@@ -69,14 +71,36 @@
       }
       .salida {
         font-family: 'Merriweather', serif;
-        font-size: 4vh;
-        margin-left: 2vw;
+        font-size: 3vh;
+        margin-right: 1vw;
+        float: right;
       }
 
+      button {
+        padding: 0.5rem 1.5em;
+        margin-top: 0.5rem;
+        background-color: rgb(103, 103, 243);
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #23c483;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+      button:active {
+        transform: translateY(-1px);
+      }
+
+      
       @media (max-width: 700px) {
         .card {
           max-height: 100%;
-          height: 90vh;
+          height: 89vh;
           margin-top: 2vh;
           background: rgb(21, 180, 219);
         }
@@ -101,20 +125,16 @@
       }
     </style>
   </head>
-  <body class="text-dark">
+  <body>
     <section>
       <div class="card">
         <div class="profile">
-          <img
-            src="https://avatars.githubusercontent.com/u/86811722?v=4"
-            alt=""
-          />
+          <img src="https://avatars.githubusercontent.com/u/86811722?v=4" alt="" />
         </div>
         <h1>Ilan Nestor Angeles Rodriguez</h1>
         <div style="display: flex; flex-direction: row; justify-content: center; gap: 40px; row-gap: 5px; flex-wrap: wrap;">
           <div class="sn">
-            <img
-              src="./Images/Gmail.webp" alt="..."/>
+            <img src="./Images/Gmail.webp" alt="..."/>
             <h5>Gmail</h5>
             <a class="tag" href="mailto:ilanangelesrodriguez@gmail.com?subject=titulo" target="_blank">Enviar mensaje</a>
           </div>
@@ -147,7 +167,9 @@
       </div>
     </section>
     <div>
-      <a class="salida" href="index.html">Volver</a>
+    <button class="salida">
+      <a class="button-top" href="index.html" style="text-decoration:none; color: #fff;">Volver</a>
+    </button>
     </div>
   </body>
 </html>
