@@ -2,6 +2,7 @@
 :root {
     --color-main: aquamarine;
     --color-sec: rgb(8, 23, 105);
+    --color-delete:rgb(221, 17, 17);
 }
 html {
     font-family: 'Merriweather', serif;
@@ -77,13 +78,20 @@ html {
 }
 .button {
     padding: 10px 40px;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: blue;
     color: white;
     font-family:'Merriweather', serif;
     border: none;
     cursor: pointer;
     font-size: 100%;
+}
+
+.button-reset:active {
+    background: var(--color-delete);
+}
+.button:hover{
+    padding: 12px 42px;
 }
 #email, #name, #message  {
     max-width: 100%;
@@ -128,7 +136,7 @@ html {
     background-color: var(--color-sec);
     color: white;
 }
-@media (orientation:landscape){
+@media (orientation:portrait){
     :root {
         --color-main: rgb(57, 216, 105);
         --color-sec: rgb(8, 82, 105);  
@@ -159,7 +167,7 @@ html {
         color: white;
     }
     .button:hover{
-        padding: 15px 45px;
+        padding: 12px 42px;
     }
     .contact {
         padding: 60px 10px;
