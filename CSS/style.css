@@ -47,8 +47,11 @@ html {
 }
 .profile {
     max-width: 100%;
-    width: 20vw;
+    width: 40vw;
     float: right;
+    border-radius:3rem 8rem 4rem 7rem;
+    background-color:var(--color-sec);
+    margin-top:-30px;
 }
 .skills-logo, .sn-logo {
     max-width: 100%;
