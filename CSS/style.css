@@ -70,8 +70,8 @@ html {
     to {color: rgb(121, 238, 121);}
 }
 .home h1 {
-    padding-top: 200px;
-    padding-bottom: 20px;
+    padding-top: 20vh;
+    padding-bottom: 3vh;
 }
 .contact {
     padding: 60px 10px;
