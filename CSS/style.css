@@ -47,7 +47,7 @@ html {
 }
 .profile {
     max-width: 100%;
-    width: 40vw;
+    width: 30vw;
     float: right;
     border-radius:3rem 8rem 4rem 7rem;
     background-color:var(--color-sec);
