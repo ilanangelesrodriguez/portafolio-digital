@@ -45,6 +45,15 @@ html {
     width: 100vw;
     height: 85vh;
 }
+.init {
+    text-decoration:none;
+}
+.init:hover {
+    color:var(--color-main);
+}
+.init:active {
+    color:var(--color-main);
+} 
 .header-menu ul {
     display: flex;
     justify-content: space-around;
