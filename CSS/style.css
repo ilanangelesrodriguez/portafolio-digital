@@ -109,11 +109,17 @@ html {
     padding-bottom: 5vh;
 }
 .myproject-title {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+@keyframes animacionbg {
+    from {background-color: rgb(141, 156, 241);}
+    to {background-color: rgb(121, 238, 121);}
 }
 .project-list {
     background-color: var(--color-main);
+    animation: animacionbg 2s ease-in-out infinite alternate;
     border-radius:2rem;
     padding: 2vw;
     padding-left: 5vw;
@@ -122,11 +128,11 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 30vw;
 }
 .project-image {
     max-width: 100%;
-    width: 35vw;
+    /* width: 20rem; */
     border-radius: 15px;
 }
 .project-info{
@@ -140,7 +146,7 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 5vw;
+    gap: 3vw;
 }
 .project-link{
     display: flex;
@@ -283,6 +289,10 @@ a{
         float: right;
         border-radius:3rem 8rem 4rem 7rem;
         background-color:var(--color-sec);
+    }
+    .project-list {
+        width: 80vw;
+        padding: 2rem;
     }
     .profile:active {
         background-color:var(--color-main);
