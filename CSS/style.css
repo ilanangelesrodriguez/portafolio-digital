@@ -11,6 +11,9 @@ html {
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 .link {
     text-decoration:none;
     color: var(--color-main);
@@ -44,7 +47,6 @@ html {
     padding: 0.8rem 0;
 }
 .home {
-    flex-wrap: wrap;
     background-image: url(../Images/pexels-stein-egil-liland-1933239.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,6 +55,24 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.write-message{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+#write-message{
+    position: fixed;
+    color: rgb(255, 255, 255);
+    background-color: var(--color-sec);
+    max-height: 100%;
+    border-radius: 3px;
+    margin-top: 25vh;
+}
+#write-message:active{
+    background-color: var(--color-main);
+    color: var(--color-sec);
 }
 .init {
     text-decoration:none;
@@ -82,11 +102,6 @@ html {
 .profile:active {
     background-color:var(--color-main);
 }
-.skills-logo, .sn-logo {
-    max-width: 100%;
-    width: 8vw;
-}
-
 .home h1,.home p {
     text-align: center;
     color: white;
@@ -130,7 +145,6 @@ html {
 }
 .project-image {
     max-width: 100%;
-    /* width: 20rem; */
     border-radius: 15px;
 }
 .project-info{
@@ -150,7 +164,6 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: center; */
     gap: 5vw;
 }
 .project-description {
@@ -159,9 +172,6 @@ html {
 }
 .project-title {
     padding-bottom: 1vw;
-}
-a{
-    text-decoration: none;
 }
 .credits {
     max-width: 100%;
@@ -198,9 +208,8 @@ a{
 }
 #skills-section{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 0 5vw;
 }
 .skills {
     background-color: var(--color-main);
@@ -208,8 +217,7 @@ a{
     border-radius:2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 80vw;
 }
 .skills-title {
     display: flex;
@@ -217,7 +225,7 @@ a{
 }
 .skills-list {
     display: flex;
-    gap: 20px;
+    gap: 1.5rem 2rem;
     list-style: none;
     justify-content: center;
     flex-wrap: wrap;
@@ -225,16 +233,25 @@ a{
 .skills-list li {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.skills-list li img {
-    margin-right: 10px;
+.skills-logo {
+    max-width: 100%;
+    height: 10vw;
 }
 .social-network {
     display: flex;
     gap: 20px;
     list-style: none;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+}
+.sn-logo{
+    width: 5rem;
+    display: flex;
+    align-items: center;
 }
 .footer-d {
     display: flex;
@@ -308,6 +325,13 @@ a{
     }
     .profile:active {
         background-color:var(--color-main);
+    }
+    .skills-logo {
+        max-height: 100%;
+        height: 5vh;
+    }
+    .sn-logo{
+        width: 10vw;
     }
 }
 @media (min-width: 870px){
