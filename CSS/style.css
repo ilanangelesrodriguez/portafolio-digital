@@ -142,6 +142,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 30vw;
+    height: 50vh;
 }
 .project-image {
     max-width: 100%;
@@ -169,6 +170,7 @@ a{
 .project-description {
     padding: 1vw;
     text-align: center;
+    font-size: small;
 }
 .project-title {
     padding-bottom: 1vw;
