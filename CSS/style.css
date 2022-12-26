@@ -82,7 +82,13 @@ a{
 }
 .init:active {
     color:var(--color-main);
-} 
+}
+.img-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 0 10vw;
+    align-items: center;
+}
 .header-menu ul {
     display: flex;
     justify-content: space-around;
@@ -95,7 +101,8 @@ a{
 }
 
 .profile {
-    max-width: 100%;
+    max-height: 100%;
+    height: 30vh;
     border-radius:6rem 14rem 8rem 16rem;
     background-color:var(--color-sec);
 }
@@ -125,6 +132,7 @@ a{
 .myproject-title {
     text-align: center;
     padding: 2vw;
+    font-size: x-large;
 }
 @keyframes animacionbg {
     from {background-color: rgb(141, 156, 241);}
@@ -142,7 +150,6 @@ a{
     justify-content: center;
     align-items: center;
     width: 30vw;
-    height: 50vh;
 }
 .project-image {
     max-width: 100%;
@@ -174,14 +181,16 @@ a{
 }
 .project-title {
     padding-bottom: 1vw;
+    text-align: center;
+    font-size: medium;
 }
 .credits {
     max-width: 100%;
-    display: block;
     text-align: center;
     color: white;
     background-color: var(--color-sec);
     padding: 1rem 0;
+    font-size: small;
 }
 .button {
     padding: 10px 40px;
@@ -250,11 +259,23 @@ a{
     justify-content: center;
     align-items: center;
 }
+.sn-about-me{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    list-style: none;
+    gap: 2vw;
+}
 .sn-logo{
     width: 3rem;
     display: flex;
     align-items: center;
 }
+/* .sn-description{
+    display: flex;
+    flex-direction: row;
+} */
 .footer-d {
     display: flex;
     justify-content: center;
@@ -323,6 +344,7 @@ a{
     }
     .project-list {
         width: 70vw;
+        height: 30vh;
         padding: 2rem;
     }
     .profile:active {
