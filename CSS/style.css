@@ -245,9 +245,11 @@ input, textarea {
 .social-network {
     display: flex;
     gap: 20px;
+    padding: 10px;
     list-style: none;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 .sn-about-me{
     display: flex;
