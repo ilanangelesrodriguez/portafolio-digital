@@ -11,8 +11,18 @@ html {
     margin: 0;
     padding: 0;
 }
+label,p, h1 {
+    font-family:'Merriweather', serif;
+}
 a{
     text-decoration: none;
+}
+#logo-head{
+    max-width: 100%;
+    width: 180px;
+}
+#barra-svg-nav{
+    display: none;
 }
 .bi-whatsapp{
     color: green;
@@ -39,13 +49,23 @@ a{
 .description-content{
     max-width: 100%;
 }
-.header-menu ul li a {
+.header-menu{
+    width: 60vw;
+}
+.header-menu div {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.header-menu div li a {
     color: aliceblue;
     font-family: 'Merriweather', serif;
     font-weight: bolder;
     font-size: 100%;
 }
-.header-menu ul li a:active {
+.header-menu div li a:active {
     color: var(--color-main);
 }
 .header {
@@ -53,7 +73,18 @@ a{
     max-width: 100%;
     width: 100vw;
     position: fixed;
-    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+#header-mov {
+    background-color: var(--color-sec);
+    display: none;
+}
+#nav-head{
+    display: flex;
+    justify-content: space-around;
 }
 .home {
     background-image: url(../Images/pexels-stein-egil-liland-1933239.jpg);
@@ -98,16 +129,6 @@ a{
     gap: 0 10vw;
     align-items: center;
 }
-.header-menu ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-.header-menu ul li a svg {
-    display: none;
-}
 
 .profile {
     max-height: 100%;
@@ -140,59 +161,14 @@ a{
 }
 .myproject-title {
     text-align: center;
-    padding: 2vw;
+    /* padding: 2vw; */
     font-size: x-large;
 }
 @keyframes animacionbg {
     from {background-color: rgb(141, 156, 241);}
     to {background-color: rgb(121, 238, 121);}
 }
-.project-list {
-    background-color: var(--color-main);
-    animation: animacionbg 2s ease-in-out infinite alternate;
-    border-radius:2rem;
-    padding: 1vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-}
-.project-image {
-    max-width: 100%;
-    border-radius: 15px;
-}
-.project-info{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.project-l{
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 3vw;
-}
-.project-link{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5vw;
-}
-.project-description {
-    padding: 1vw;
-    text-align: center;
-    font-size: small;
-}
-.project-title {
-    padding-bottom: 1vw;
-    text-align: center;
-    font-size: medium;
-}
+
 .credits {
     max-width: 100%;
     text-align: center;
@@ -200,6 +176,7 @@ a{
     background-color: var(--color-sec);
     padding: 1rem 0;
     font-size: small;
+    font-family:'Merriweather', serif;
 }
 .button {
     padding: 10px 40px;
@@ -245,10 +222,11 @@ a{
 }
 .skills-list {
     display: flex;
-    gap: 1.5rem 2rem;
+    gap: 1rem;
     list-style: none;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 0px;
 }
 .skills-list li {
     display: flex;
@@ -312,11 +290,36 @@ input, textarea {
         max-width: 100%;
         width: 100vw;
         position: fixed;
-        /* top: 0; */
-        padding: 0.1rem 0 ;
+        z-index: 1;
     }
-    .header-menu ul li a svg {
+    .carousel-caption{
         display: block;
+    }
+    /* .header-menu div li a:hover {
+        color: skyblue;
+    } */
+    /* .header-menu div li a:active {
+        color: var(--color-main);
+    } */
+    /* .header-menu div li a svg {
+        display: block;
+    } */
+    #logo-head{
+        padding-left: 3vw;
+    }
+    #nav-head{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #nav-head-li {
+        display: none;
+    }
+    #barra-svg-nav {
+        display: block;
+    }
+    #header-mov {
+        background-color: var(--color-sec);
+        display: flex;
     }
     .init {
         display: none;
@@ -326,12 +329,6 @@ input, textarea {
     }
     .init:active {
         background-color: var(--color-main);
-    }
-    .header-menu ul li a:hover {
-        color: skyblue;
-    }
-    .header-menu ul li a:active {
-        color: var(--color-main);
     }
     .home h1 {
         max-height: 100%;
