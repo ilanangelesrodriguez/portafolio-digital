@@ -95,10 +95,20 @@
                 <h1 class="modal-title fs-5 text-dark" id="staticBackdropLabel">Información</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
-                En proceso ...
+              <div class="modal-body d-flex justify-content-center">
+                <button disabled type="button" class="btn btn-success d-flex flex-row align-items-center">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="pe-2 bi bi-download" viewBox="0 0 16 16">
+                      <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                      <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="./assets/fut_uns.pdf" download="fut_uns.pdf" id="download-CV">Descargar CV</a>
+                  </div>
+                </button>
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer d-flex justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn btn-primary">Contactar</button>
               </div>
@@ -169,10 +179,12 @@
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner pb-3">
+        <div class="carousel-inner pb-3" id="carousel-projects">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./Images/encriptador-ONE.png" class="d-block w-100 rounded-4" alt="...">
-            <div class="carousel-caption d-none d-md-block text-dark text-bg-light border border-primary rounded-3">
+            <div class="d-flex justify-content-center">
+              <img src="./Images/encriptador-ONE.png" id="carousel-img" class="rounded-4" alt="...">
+            </div>
+            <div class="carousel-caption text-dark rounded-3">
                 <div class="card-body">
                   <h5 class="card-title pb-3">Encriptador de texto</h5>
                   <p class="card-text">Challenge ONE: Encriptador de texto con Javascript.</p>
@@ -182,8 +194,10 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./Images/quizFlag.png" class="d-block w-100 rounded-4" alt="...">
-            <div class="carousel-caption d-none d-md-block text-dark text-bg-light border border-primary rounded-3">
+            <div class="d-flex justify-content-center">
+              <img src="./Images/quizFlag.png" id="carousel-img" class="rounded-4" alt="...">
+            </div>
+            <div class="carousel-caption text-dark rounded-3">
               <div class="card-body">
                 <h5 class="card-title pb-3">Quiz Flag</h5>
                 <p class="card-text">Juego de aleatoriedad con banderas.</p>
@@ -193,8 +207,10 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./Images/INStore.png" class="d-block w-100 rounded-4" alt="...">
-            <div class="carousel-caption d-none d-md-block text-dark text-bg-light border border-primary rounded-3">
+            <div class="d-flex justify-content-center">
+              <img src="./Images/INStore.png" id="carousel-img" class="rounded-4" alt="...">
+            </div>
+            <div class="carousel-caption text-dark rounded-3">
               <div class="card-body">
                 <h5 class="card-title pb-3">Tienda virtual</h5>
                 <p class="card-text">Tienda virtual, elaborado en el curso de introduccion al desarrollo Frontend de Platzi.</p>
@@ -204,11 +220,11 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button class="carousel-control-prev" id="carousel-control" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <button class="carousel-control-next" id="carousel-control" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
