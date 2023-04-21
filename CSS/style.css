@@ -45,6 +45,9 @@ a{
     flex-direction: column;
     justify-content: space-between;
 }
+.carousel {
+    background-color: var(--color-main);
+}
 .carousel-caption {
     /* width: 30rem; */
     height: 12vw;
@@ -201,6 +204,8 @@ a{
     display: block;
     align-items: center;
     padding: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
     background-color: var(--color-main);
 }
 .myproject-title {
