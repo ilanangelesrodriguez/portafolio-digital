@@ -4,12 +4,14 @@
     --color-sec: rgb(8, 23, 105);
     --color-delete:rgb(221, 17, 17);
 }
+
 html {
     font-family: 'Merriweather', serif;
 }
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', serif;
 }
 label,p, h1, h2 {
     font-family:'Merriweather', serif;
@@ -17,6 +19,55 @@ label,p, h1, h2 {
 a{
     text-decoration: none;
 }
+
+path {
+    transform-origin: 50% 0%;
+}
+.background--custom {
+    background-color: #FFFFFF;
+    position: absolute;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+@keyframes path0 {
+    0% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+@keyframes path1 {
+    0% {
+      transform: rotate(50deg);
+    }
+    100% {
+      transform: rotate(-50deg);
+    }
+}
+@keyframes path2 {
+    0% {
+      transform: rotate(60deg);
+    }
+    100% {
+      transform: rotate(-60deg);
+    }
+}
+@keyframes path2 {
+    0% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(-20deg);
+    }
+}
+
+
 #css{
     color: blue;
 }
@@ -106,24 +157,41 @@ a{
     flex-wrap: wrap;
     margin: 10px;
 }
-.header-menu div li a {
-    color: aliceblue;
-    font-family: 'Merriweather', serif;
-    font-weight: bolder;
-    font-size: 100%;
-}
+
 .header-menu div li a:active {
-    color: var(--color-main);
+    /* color: var(--color-main); */
 }
 .header {
-    background-color: var(--color-sec);
+    /* background-color: var(--color-sec); */
     max-width: 100%;
     width: 100vw;
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
+}
+
+.header__a{
+    color: black;
+    text-decoration: none;
+}
+.header__a:hover{
+    color: black;
+}
+
+.header__li:hover{
+    background-color: rgb(220, 222, 224, 0.5);
+    padding: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.header__navbar-icon{
+    box-shadow: none;
+    border: none !important;
+}
+.header__navbar-icon:focus, .btn-close{
+    box-shadow: none !important;
 }
 #header-mov {
     background-color: var(--color-sec);
@@ -134,7 +202,7 @@ a{
     justify-content: space-around;
 }
 .home {
-    background-image: url(../Images/pexels-stein-egil-liland-1933239.jpg);
+    /* background-image: url(../Images/pexels-stein-egil-liland-1933239.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 100%;
@@ -143,6 +211,21 @@ a{
     flex-direction: column;
     justify-content: center;
 }
+.home__button{
+    display: flex;
+    justify-content: center;
+}
+
+.home__h1, .home__p {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal__content {
+    background-color: rgb(255, 255, 255, 0.8) !important;
+}
+
 .write-message{
     display: none;
     padding-bottom: 0;
@@ -161,15 +244,7 @@ a{
     background-color: var(--color-main);
     color: var(--color-sec);
 }
-.init {
-    text-decoration:none;
-}
-.init:hover {
-    color:var(--color-main);
-}
-.init:active {
-    color:var(--color-main);
-}
+
 .img-profile {
     display: flex;
     flex-direction: column;
@@ -186,11 +261,11 @@ a{
 .profile:active {
     background-color:var(--color-main);
 }
-.home h1,.home p {
+/* .home h1,.home p {
     text-align: center;
     color: white;
     animation: animacion 2s ease-in-out infinite alternate;
-}
+} */
 @keyframes animacion {
     from {color: rgb(141, 156, 241);}
     to {color: rgb(121, 238, 121);}
