@@ -300,7 +300,7 @@ svg {
 
 .main {
   color: black;
-  height: 70vh;
+  height: 91vh;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -312,13 +312,15 @@ svg {
   gap: 2em;
 }
 .main__description-name {
-  font-size: xx-large;
+  font-size: x-large;
+  flex-wrap: wrap;
 }
 .main__description-div {
   display: flex;
   flex-direction: column;
   row-gap: 1em;
   margin-bottom: 1em;
+  width: 60vw;
 }
 .main__profile {
   width: 30vw;
@@ -335,11 +337,14 @@ svg {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 .main__profile-card img {
-  width: 10em;
+  width: 9em;
   border-radius: 10px;
 }
 .main__profile-card::after {
@@ -363,7 +368,7 @@ svg {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  height: 3em;
+  height: 2.5em;
 }
 
 .button__download {
@@ -635,6 +640,9 @@ svg {
 }
 
 @media (max-width: 768px) {
+  .button__download {
+    margin: auto;
+  }
   .habilidades__card {
     width: 75vw;
     grid-template-columns: 1fr 1fr 1fr;
@@ -642,6 +650,9 @@ svg {
   }
   .habilidades__card-item {
     height: 8em;
+  }
+  .header {
+    display: none;
   }
   .header__picture {
     display: none;
@@ -660,6 +671,7 @@ svg {
   }
   .main {
     flex-direction: column-reverse;
+    height: 100vh;
   }
   .main__description {
     width: auto;
