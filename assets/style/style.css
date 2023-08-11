@@ -261,11 +261,17 @@ svg {
 .habilidades__card-item--4 {
   background: #f3bbe1;
 }
+.habilidades__card-item--5 {
+  background: #ffd8be;
+}
 .habilidades__card-item--6 {
   background-color: #A6A7A8;
 }
 .habilidades__card-item--7 {
   background-color: #C8ADF3;
+}
+.habilidades__card-item--8 {
+  background: #e2eca9;
 }
 .habilidades__card-quantity {
   font-size: 25px;
