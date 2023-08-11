@@ -43,7 +43,7 @@ svg {
 }
 .curved {
   position: relative;
-  background: #2c3e50;
+  background: royalblue;
   height: auto;
   padding-top: 5vh;
   padding-bottom: 10vh;
@@ -204,6 +204,9 @@ svg {
 .header__section-nav {
   gap: 2em;
 }
+.header__section-movil {
+  display: none;
+}
 .header__picture {
   width: 3em;
 }
@@ -298,6 +301,25 @@ svg {
   font-size: large;
 }
 
+.barra-navegacion {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: royalblue;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.barra-navegacion a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 .main {
   color: black;
   height: 91vh;
@@ -320,7 +342,7 @@ svg {
   flex-direction: column;
   row-gap: 1em;
   margin-bottom: 1em;
-  width: 60vw;
+  width: 70vw;
 }
 .main__profile {
   width: 30vw;
@@ -662,6 +684,9 @@ svg {
   }
   .header__section-nav {
     display: none;
+  }
+  .header__section-movil {
+    display: flex;
   }
   .input {
     max-width: 80vw;

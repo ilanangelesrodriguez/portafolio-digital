@@ -9,6 +9,7 @@ $font-main:'Poppins', sans-serif;
 svg{
     fill: none !important;
 }
+
 .aboutme{
     color: black;
     //height: 20vh;
@@ -29,7 +30,6 @@ svg{
     background: linear-gradient(90deg, #3AE3EC, #3892A3, #1AF374);
     background-size: 300% 300%;
     animation: gradient 4s alternate infinite;
-    //position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -47,7 +47,7 @@ svg{
 ////////////
 .curved {
     position: relative;
-    background: #2c3e50;
+    background: royalblue;
     height: auto;
     padding-top: 5vh;
     padding-bottom: 10vh;
@@ -206,6 +206,9 @@ svg{
         &-nav{
             gap: 2em;
         }
+        &-movil{
+            display: none;
+        }
     }
     &__picture{
         width: 3em;
@@ -302,7 +305,27 @@ svg{
     }
 }
 
- 
+.barra-navegacion {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    //display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .barra-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+
 
 .main{
     color: black;
@@ -324,7 +347,7 @@ svg{
             flex-direction: column;
             row-gap: 1em;
             margin-bottom: 1em;
-            width: 60vw;
+            width: 70vw;
         }
     }
     &__profile{
@@ -706,6 +729,9 @@ svg{
             width: auto;
             &-nav{
                 display: none;
+            }
+            &-movil{
+                display: flex;
             }
         }
     }
