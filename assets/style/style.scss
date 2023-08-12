@@ -17,14 +17,18 @@ svg{
     flex-wrap: wrap ;
     align-items: center;
     gap: 2em;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     padding-top: 2em;
     padding-bottom: 2em;
+    
     &__title{
         font-size: large;
+        width: auto;
     }
 }
+
+
 
 .background--custom {
     background: linear-gradient(90deg, #3AE3EC, #3892A3, #1AF374);
@@ -44,18 +48,6 @@ svg{
     }
   }
 
-////////////
-.curved {
-    position: relative;
-    background: royalblue;
-    height: auto;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
-    border-bottom-left-radius: 80% 20%;
-    border-bottom-right-radius: 80% 20%;
-  }
-
-
 .form{
     //height: 20vh;
     color: black;
@@ -67,9 +59,9 @@ svg{
     row-gap: 2em;
     column-gap: 6em;
     flex-direction: row;
-    align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    align-items: flex-start;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding-top: 2em;
     padding-bottom: 2em;
     &__detail{
@@ -99,13 +91,15 @@ svg{
             flex-direction: row;
             flex-wrap: wrap;
             gap: 1em;
+            justify-content: center;
         }
     }
     &__title{
-        width: 100vw;
+        //width: 100vw;
         font-size: large;
         text-align: center;
         color: black;
+        padding-bottom: 2em;
     }
 }
 
@@ -175,12 +169,11 @@ svg{
     visibility: hidden;
   }
 
-////
 .header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: cadetblue;
+    background-color: royalblue;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     &__brand{
@@ -218,13 +211,13 @@ svg{
     }
 }
 
-.habilidades {
+.habilidades, .habilidades__2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    &__card{
+    &__card, &-card{
         width: 45vw;
         height: 15em;
         color: white;
@@ -313,16 +306,25 @@ svg{
         font-size: large;
     }
 }
+.curved {
+    position: relative;
+    background: royalblue;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    border-bottom-left-radius: 80% 20%;
+    border-bottom-right-radius: 80% 20%;
+  }
+
 
 .barra-navegacion {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: royalblue;
     color: white;
-    //display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 10px 0;
@@ -384,7 +386,6 @@ svg{
                 border-radius: 10px;
             }
             &::after {
-                //content: "HOVER ME";
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -399,7 +400,6 @@ svg{
                 box-shadow: 11px 11px 25px rgba(0, 0, 0, 0.5);
             }
             &:hover::after {
-                //content: "THANKS";
                 color: aqua;
             }
         }
@@ -510,7 +510,6 @@ svg{
         display: grid;
         place-items: center;
         background: #e3edf7;
-        //padding: 1em;
         border-radius: 10px;
         box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
                 -6px -6px 10px -1px rgba(255,255,255,0.7);
@@ -544,8 +543,6 @@ svg{
     }
   }
 
-
-
 @keyframes docs {
     0% {
      transform: translateY(0%);
@@ -569,7 +566,6 @@ svg{
     text-align: center;
 }
 
-/////////////7
 .projects{
     display: flex;
     flex-direction: row;
@@ -711,8 +707,6 @@ svg{
     transform: scale(0.95);
    }
 
-/////////////
-
 @media (max-width: 768px){
     .button{
         &__download{
@@ -755,6 +749,7 @@ svg{
     .main{
         flex-direction: column-reverse;
         height: 100vh;
+        gap: 2em;
         &__description{
             width: auto;
         }
@@ -770,12 +765,14 @@ svg{
         flex-direction: column;
         gap: 2em;
         &__detail{
+            width: 324px;
             &-info{
                 font-size: smaller;
             }
         }
         &__title{
             width: auto;
+            padding-bottom: 1em;
         }
         &__registro{
             &-section{

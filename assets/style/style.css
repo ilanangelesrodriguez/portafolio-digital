@@ -14,13 +14,14 @@ svg {
   flex-wrap: wrap;
   align-items: center;
   gap: 2em;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 .aboutme__title {
   font-size: large;
+  width: auto;
 }
 
 .background--custom {
@@ -41,16 +42,6 @@ svg {
     background-position: 100%;
   }
 }
-.curved {
-  position: relative;
-  background: royalblue;
-  height: auto;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
-  border-bottom-left-radius: 80% 20%;
-  border-bottom-right-radius: 80% 20%;
-}
-
 .form {
   color: black;
   display: flex;
@@ -60,9 +51,9 @@ svg {
   -moz-column-gap: 6em;
        column-gap: 6em;
   flex-direction: row;
-  align-items: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  align-items: flex-start;
+  margin-left: 5vw;
+  margin-right: 5vw;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -91,12 +82,13 @@ svg {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
+  justify-content: center;
 }
 .form__title {
-  width: 100vw;
   font-size: large;
   text-align: center;
   color: black;
+  padding-bottom: 2em;
 }
 
 .input {
@@ -177,7 +169,7 @@ svg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: cadetblue;
+  background-color: royalblue;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
@@ -214,14 +206,14 @@ svg {
   width: 3em;
 }
 
-.habilidades {
+.habilidades, .habilidades__2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 2em;
 }
-.habilidades__card {
+.habilidades__card, .habilidades-card, .habilidades__2__card, .habilidades__2-card {
   width: 45vw;
   height: 15em;
   color: white;
@@ -231,7 +223,7 @@ svg {
   gap: 5px;
   overflow: visible;
 }
-.habilidades__card-item {
+.habilidades__card-item, .habilidades-card-item, .habilidades__2__card-item, .habilidades__2-card-item {
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -240,79 +232,89 @@ svg {
   align-items: center;
   justify-content: center;
 }
-.habilidades__card-item:hover {
+.habilidades__card-item:hover, .habilidades-card-item:hover, .habilidades__2__card-item:hover, .habilidades__2-card-item:hover {
   transform: scale(0.95);
   transition: all 0.3s;
 }
-.habilidades__card-item svg {
+.habilidades__card-item svg, .habilidades-card-item svg, .habilidades__2__card-item svg, .habilidades__2-card-item svg {
   width: 60px;
   height: 60px;
   margin-bottom: 7px;
 }
-.habilidades__card-item--1 {
+.habilidades__card-item--1, .habilidades-card-item--1, .habilidades__2__card-item--1, .habilidades__2-card-item--1 {
   background: #c7c7ff;
 }
-.habilidades__card-item--2 {
+.habilidades__card-item--2, .habilidades-card-item--2, .habilidades__2__card-item--2, .habilidades__2-card-item--2 {
   background: #ffd8be;
 }
-.habilidades__card-item--3 {
+.habilidades__card-item--3, .habilidades-card-item--3, .habilidades__2__card-item--3, .habilidades__2-card-item--3 {
   background: #e2eca9;
 }
-.habilidades__card-item--4 {
+.habilidades__card-item--4, .habilidades-card-item--4, .habilidades__2__card-item--4, .habilidades__2-card-item--4 {
   background: #f3bbe1;
 }
-.habilidades__card-item--5 {
+.habilidades__card-item--5, .habilidades-card-item--5, .habilidades__2__card-item--5, .habilidades__2-card-item--5 {
   background: #ffd8be;
 }
-.habilidades__card-item--6 {
+.habilidades__card-item--6, .habilidades-card-item--6, .habilidades__2__card-item--6, .habilidades__2-card-item--6 {
   background-color: #A6A7A8;
 }
-.habilidades__card-item--7 {
+.habilidades__card-item--7, .habilidades-card-item--7, .habilidades__2__card-item--7, .habilidades__2-card-item--7 {
   background-color: #C8ADF3;
 }
-.habilidades__card-item--8 {
+.habilidades__card-item--8, .habilidades-card-item--8, .habilidades__2__card-item--8, .habilidades__2-card-item--8 {
   background: #e2eca9;
 }
-.habilidades__card-quantity {
+.habilidades__card-quantity, .habilidades-card-quantity, .habilidades__2__card-quantity, .habilidades__2-card-quantity {
   font-size: 25px;
   font-weight: 600;
 }
-.habilidades__text {
+.habilidades__text, .habilidades__2__text {
   font-size: 0.9em;
   font-family: inherit;
   font-weight: 600;
 }
-.habilidades__text-1 {
+.habilidades__text-1, .habilidades__2__text-1 {
   color: rgb(149, 149, 255);
 }
-.habilidades__text-2 {
+.habilidades__text-2, .habilidades__2__text-2 {
   color: rgb(252, 161, 71);
 }
-.habilidades__text-3 {
+.habilidades__text-3, .habilidades__2__text-3 {
   color: rgb(84, 88, 14);
 }
-.habilidades__text-4 {
+.habilidades__text-4, .habilidades__2__text-4 {
   color: rgb(220, 91, 183);
 }
-.habilidades__text-5 {
+.habilidades__text-5, .habilidades__2__text-5 {
   color: rgb(255, 0, 0);
 }
-.habilidades__text-6 {
+.habilidades__text-6, .habilidades__2__text-6 {
   color: rgb(0, 0, 0);
 }
-.habilidades__text-7 {
+.habilidades__text-7, .habilidades__2__text-7 {
   color: #6F2BF3;
 }
-.habilidades__text-8 {
+.habilidades__text-8, .habilidades__2__text-8 {
   color: rgb(84, 88, 14);
 }
-.habilidades__title {
+.habilidades__title, .habilidades__2__title {
   font-size: large;
+}
+
+.curved {
+  position: relative;
+  background: royalblue;
+  height: auto;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  border-bottom-left-radius: 80% 20%;
+  border-bottom-right-radius: 80% 20%;
 }
 
 .barra-navegacion {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -706,6 +708,7 @@ svg {
   .main {
     flex-direction: column-reverse;
     height: 100vh;
+    gap: 2em;
   }
   .main__description {
     width: auto;
@@ -720,11 +723,15 @@ svg {
     flex-direction: column;
     gap: 2em;
   }
+  .form__detail {
+    width: 324px;
+  }
   .form__detail-info {
     font-size: smaller;
   }
   .form__title {
     width: auto;
+    padding-bottom: 1em;
   }
   .form__registro-section {
     gap: 0;

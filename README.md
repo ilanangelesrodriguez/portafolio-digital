@@ -31,7 +31,7 @@ El proyecto sigue una estructura organizada para mantener el código limpio y ma
 
 ## Autor
 
-- Nombre: Tu Nombre
+- Nombre: Ilan Nestor Angeles Rodriguez
 - Sitio Web: [ilanangelesrodriguez.vercel.app](https://ilanangelesrodriguez.vercel.app/)
 - LinkedIn: [Ilan Nestor Angeles Rodriguez](https://www.linkedin.com/in/ilannestorangelesrodriguez/)
 
