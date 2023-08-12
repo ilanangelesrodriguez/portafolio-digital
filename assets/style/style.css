@@ -9,7 +9,7 @@ svg {
 }
 
 .aboutme {
-  color: black;
+  color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,6 +22,10 @@ svg {
 .aboutme__title {
   font-size: large;
   width: auto;
+}
+.aboutme__card {
+  font-size: 0.9em;
+  font-weight: bolder;
 }
 
 .background--custom {
@@ -265,6 +269,9 @@ svg {
 .habilidades__card-item--8, .habilidades-card-item--8, .habilidades__2__card-item--8, .habilidades__2-card-item--8 {
   background: #e2eca9;
 }
+.habilidades__card-item--9, .habilidades-card-item--9, .habilidades__2__card-item--9, .habilidades__2-card-item--9 {
+  background-color: #ffffff;
+}
 .habilidades__card-quantity, .habilidades-card-quantity, .habilidades__2__card-quantity, .habilidades__2-card-quantity {
   font-size: 25px;
   font-weight: 600;
@@ -274,29 +281,8 @@ svg {
   font-family: inherit;
   font-weight: 600;
 }
-.habilidades__text-1, .habilidades__2__text-1 {
-  color: rgb(149, 149, 255);
-}
-.habilidades__text-2, .habilidades__2__text-2 {
-  color: rgb(252, 161, 71);
-}
-.habilidades__text-3, .habilidades__2__text-3 {
-  color: rgb(84, 88, 14);
-}
-.habilidades__text-4, .habilidades__2__text-4 {
-  color: rgb(220, 91, 183);
-}
-.habilidades__text-5, .habilidades__2__text-5 {
-  color: rgb(255, 0, 0);
-}
-.habilidades__text-6, .habilidades__2__text-6 {
+.habilidades__text-1, .habilidades__text-2, .habilidades__text-3, .habilidades__text-4, .habilidades__text-5, .habilidades__text-6, .habilidades__text-7, .habilidades__text-8, .habilidades__text-9, .habilidades__2__text-1, .habilidades__2__text-2, .habilidades__2__text-3, .habilidades__2__text-4, .habilidades__2__text-5, .habilidades__2__text-6, .habilidades__2__text-7, .habilidades__2__text-8, .habilidades__2__text-9 {
   color: rgb(0, 0, 0);
-}
-.habilidades__text-7, .habilidades__2__text-7 {
-  color: #6F2BF3;
-}
-.habilidades__text-8, .habilidades__2__text-8 {
-  color: rgb(84, 88, 14);
 }
 .habilidades__title, .habilidades__2__title {
   font-size: large;
@@ -402,6 +388,8 @@ svg {
   justify-content: center;
   flex-direction: row;
   height: 2.5em;
+  -moz-column-gap: 0.5em;
+       column-gap: 0.5em;
 }
 
 .button__download {
