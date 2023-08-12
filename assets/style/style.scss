@@ -399,7 +399,7 @@ svg{
             flex-direction: column;
             row-gap: 1em;
             margin-bottom: 1em;
-            width: 70vw;
+            //width: 70vw;
         }
     }
     &__profile{
@@ -457,6 +457,7 @@ svg{
 
 .button{
     &__download{
+        margin: auto;
         position: relative;
         border-width: 0;
         color: white;
