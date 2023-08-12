@@ -1,4 +1,4 @@
-## Myblog
+## Mi Portafolio Digital
 
 Este es mi portafolio digital personal, donde muestro una colección de mis proyectos, habilidades y experiencia en el desarrollo web.
 
