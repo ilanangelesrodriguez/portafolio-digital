@@ -11,8 +11,10 @@ svg {
 .aboutme {
   color: rgb(255, 255, 255);
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 2em;
   padding-left: 10vw;
   padding-right: 10vw;
@@ -22,10 +24,40 @@ svg {
 .aboutme__title {
   font-size: large;
   width: auto;
+  text-align: center;
+  padding-bottom: 1em;
 }
 .aboutme__card {
   font-size: 0.9em;
   font-weight: bolder;
+  width: 40vw;
+  text-align: justify;
+}
+.aboutme__experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.aboutme__experience-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.aboutme__experience-description {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.aboutme__experience-place {
+  font-size: small;
+}
+.aboutme__experience-svg {
+  display: flex;
+  align-items: center;
+  padding-right: 1em;
+}
+.aboutme__experience-time {
+  font-size: x-small;
 }
 
 .background--custom {
@@ -267,6 +299,7 @@ svg {
   background-color: #C8ADF3;
 }
 .habilidades__card-item--8, .habilidades-card-item--8, .habilidades__2__card-item--8, .habilidades__2-card-item--8 {
+  display: none;
   background: #e2eca9;
 }
 .habilidades__card-item--9, .habilidades-card-item--9, .habilidades__2__card-item--9, .habilidades__2-card-item--9 {
@@ -336,6 +369,7 @@ svg {
 }
 .main__description-div {
   display: flex;
+  align-items: center;
   flex-direction: column;
   row-gap: 1em;
   margin-bottom: 1em;
@@ -661,6 +695,12 @@ svg {
 }
 
 @media (max-width: 768px) {
+  .aboutme__card {
+    width: auto;
+  }
+  .aboutme__experience-description {
+    width: 80vw;
+  }
   .button__download {
     margin: auto;
   }
@@ -671,6 +711,9 @@ svg {
   }
   .habilidades__card-item {
     height: 8em;
+  }
+  .habilidades__card-item--8 {
+    display: flex;
   }
   .header {
     display: none;
@@ -708,7 +751,6 @@ svg {
     width: 50vw;
   }
   .form {
-    flex-direction: column;
     gap: 2em;
   }
   .form__detail {

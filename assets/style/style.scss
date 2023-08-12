@@ -10,11 +10,14 @@ svg{
     fill: none !important;
 }
 
+
 .aboutme{
     color: rgb(255, 255, 255);
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap ;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 2em;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -24,10 +27,41 @@ svg{
     &__title{
         font-size: large;
         width: auto;
+        text-align: center;
+        padding-bottom: 1em;
+        //width: 75vw;
     }
     &__card{
         font-size: 0.9em;
         font-weight: bolder;
+        width: 40vw;
+        text-align: justify;
+    }
+    &__experience{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        &-item{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &-description{
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+        }
+        &-place{
+            font-size: small;
+        }
+        &-svg{
+            display: flex;
+            align-items: center;
+            padding-right: 1em;
+        }
+        &-time{
+            font-size: x-small;
+        }
     }
 }
 
@@ -264,6 +298,7 @@ svg{
                 background-color: #C8ADF3;
             }
             &--8 {
+                display: none;
                 background: #e2eca9;
             }
             &--9 {
@@ -360,6 +395,7 @@ svg{
         }
         &-div{
             display: flex;
+            align-items: center;
             flex-direction: column;
             row-gap: 1em;
             margin-bottom: 1em;
@@ -714,6 +750,16 @@ svg{
    }
 
 @media (max-width: 768px){
+    .aboutme{
+        &__card{
+            width: auto;
+        }
+        &__experience{
+            &-description{
+                width: 80vw;
+            }
+        }
+    }
     .button{
         &__download{
             margin: auto;
@@ -726,6 +772,9 @@ svg{
             height: auto;
             &-item{
                 height: 8em;
+                &--8{
+                    display: flex;
+                }
             }
         }
     }
@@ -768,7 +817,6 @@ svg{
         
     }
     .form{
-        flex-direction: column;
         gap: 2em;
         &__detail{
             width: 324px;
