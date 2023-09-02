@@ -31,7 +31,7 @@ svg {
   font-size: 0.9em;
   font-weight: bolder;
   width: 40vw;
-  text-align: justify;
+  text-align: center;
 }
 .aboutme__experience {
   display: flex;
@@ -577,7 +577,7 @@ svg {
 .projects__card {
   color: black;
   width: 250px;
-  height: 300px;
+  height: 330px;
   padding: 0.8em;
   background: #f5f5f5;
   position: relative;
@@ -597,7 +597,6 @@ svg {
   background-color: #ffcaa6;
 }
 .projects__card-img {
-  background-color: #ffcaa6;
   height: 40%;
   width: 100%;
   border-radius: 0.5rem;
@@ -644,6 +643,9 @@ svg {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
+}
+.cta svg {
+  width: 2em;
 }
 
 .cta:before {

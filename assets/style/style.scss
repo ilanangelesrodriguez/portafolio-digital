@@ -35,7 +35,7 @@ svg{
         font-size: 0.9em;
         font-weight: bolder;
         width: 40vw;
-        text-align: justify;
+        text-align: center;
     }
     &__experience{
         display: flex;
@@ -626,7 +626,7 @@ svg{
     &__card {
         color: black;
         width: 250px;
-        height: 300px;
+        height: 330px;
         padding: .8em;
         background: #f5f5f5;
         position: relative;
@@ -647,7 +647,6 @@ svg{
             }
         }
         &-img {
-            background-color: #ffcaa6;
             height: 40%;
             width: 100%;
             border-radius: .5rem;
@@ -700,6 +699,9 @@ svg{
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+    svg{
+        width: 2em;
+    }
    }
    
    .cta:before {

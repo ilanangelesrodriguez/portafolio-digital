@@ -31,28 +31,28 @@ class Carta {
   // Crear instancias de Carta
 const tramites = new Carta(
     "Página para tramites",
-    "Esta es la descripción de la carta 1",
+    "Desarrollado con Bootstrap y Sass. Realice maquetación de página para mi escuela.",
     "./assets/EPISItramites.png", 
     "https://eapisitramites.vercel.app/"
   );
   
-  const gestor = new Carta(
-    "Gestor de Tareas",
-    "Esta es la descripción de la carta 2",
-    "./assets/GestorDeTareas.png", 
-    "https://intareas.vercel.app/"
+  const tienda = new Carta(
+    "Tienda Online",
+    "Desarrollado con HTML, Sass y JavaScript. Permite accesibilidad al negocio.",
+    "./assets/tienda.png", 
+    "https://novedadesmarita.vercel.app/"
   );
 
   const quiz_flag = new Carta(
     "Quiz Flag",
-    "Esta es la descripción de la carta 2",
+    "Desarrollado con HTML, CSS y JavaScript. Fue mi primer proyecto manipulando el DOM.",
     "./assets/quizFlag.png", 
     "https://ilanangelesrodriguez.github.io/quizFlag/"
   );
 
 // Obtener el HTML de las cartas
 const htmlCarta1 = tramites.obtenerHTML();
-const htmlCarta2 = gestor.obtenerHTML();
+const htmlCarta2 = tienda.obtenerHTML();
 const htmlCarta3 = quiz_flag.obtenerHTML();
 
 // Agregar el HTML al documento
