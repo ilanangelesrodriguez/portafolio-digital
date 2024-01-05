@@ -1,5 +1,5 @@
 // @ts-ignore
-import pawrfectly1 from "../public/images/work/pawrfectly/1.jpg"
+import pawrfectly1 from "../public/images/work/pawrfectly/1.gif"
 // @ts-ignore
 import pawrfectly2 from "../public/images/work/pawrfectly/2.jpg"
 // @ts-ignore
