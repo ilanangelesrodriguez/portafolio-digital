@@ -1,0 +1,11 @@
+.SocialItemContainer {
+  @apply overflow-hidden h-7;
+}
+
+.SocialItem {
+  @apply text-lg flex flex-col items-start justify-between cursor-pointer top-0 h-14 font-semibold;
+}
+
+.SocialItemContent {
+  @apply h-7;
+}

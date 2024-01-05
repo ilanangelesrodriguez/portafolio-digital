@@ -1,0 +1,27 @@
+.WorkCase {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 mb-32;
+}
+
+.WorkCaseContent {
+  @apply flex flex-col justify-center items-center md:items-start text-center md:text-left;
+}
+
+.WorkCaseService {
+  @apply text-primary tracking-wider mb-2;
+}
+
+.WorkCaseTitle {
+  @apply text-5xl font-bold mb-6 font-Solway;
+}
+
+.WorkCaseDescription {
+  @apply text-lg;
+}
+
+.WorkCaseImage {
+  @apply overflow-hidden cursor-pointer rounded;
+}
+
+.WorkCaseImageContainer {
+  @apply block relative;
+}
