@@ -1,0 +1,11 @@
+.SocialsContainer {
+  @apply hidden md:block grow;
+}
+
+.Socials {
+  @apply grid grid-cols-1 gap-2;
+}
+
+.Navigation {
+  @apply grid grid-cols-1 gap-4;
+}
