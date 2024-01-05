@@ -40,11 +40,7 @@ const Work: NextPage = () => {
             </Link>
           </div>
         </div>
-        <div className={styles.Works} id="worksSection">
-          {works.map((work, index) => (
-            <WorkCase key={index} work={work} />
-          ))}
-        </div>
+
       </PageContent>
       <Footer />
       <Menu />
